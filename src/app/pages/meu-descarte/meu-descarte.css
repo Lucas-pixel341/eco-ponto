@@ -1,0 +1,52 @@
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #237a42;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contador {
+  background: #237a42;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.contador h2 {
+  font-size: 38px;
+  color: white;
+}
+
+.formulario, .lista {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px #00000010;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 18px;
+}
+
+.formulario button {
+  margin-top: 20px;
+}
+
+.lista p {
+  margin-top: 15px;
+  color: #777;
+}

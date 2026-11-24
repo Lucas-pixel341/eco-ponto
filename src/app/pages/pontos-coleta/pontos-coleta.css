@@ -1,0 +1,46 @@
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #237a42;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.ponto {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px #00000010;
+  border-left: 5px solid #278447;
+}
+
+.ponto h2 {
+  color: #237a42;
+  margin-bottom: 10px;
+}
+
+.ponto p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.dica {
+  background: #e2f3e6;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+.dica h2 {
+  color: #237a42;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,19 @@
+<div class="item">
+
+  <h3>{{ item().material }}</h3>
+
+  <p>Local: {{ item().local }}</p>
+
+  @if (item().concluido) {
+    <span>Descarte concluído! ✅</span>
+  } @else {
+    <button (click)="concluir.emit(item().id)">
+      Concluir
+    </button>
+  }
+
+  <button (click)="remover.emit(item().id)">
+    Remover
+  </button>
+
+</div>

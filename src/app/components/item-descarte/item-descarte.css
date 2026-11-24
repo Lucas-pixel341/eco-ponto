@@ -1,0 +1,29 @@
+.item {
+  background: #f4f8f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  border-left: 5px solid #278447;
+}
+
+.item h3 {
+  color: #237a42;
+  margin-bottom: 8px;
+}
+
+.item p {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.item span {
+  color: #237a42;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.item button {
+  margin-right: 10px;
+  margin-top: 8px;
+}

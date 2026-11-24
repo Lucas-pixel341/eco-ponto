@@ -1,0 +1,59 @@
+<div class="container">
+
+  <h1>Meu Descarte ♻️</h1>
+  <p class="descricao">
+    Registre seus materiais e ajude a cuidar do meio ambiente.
+  </p>
+
+  <div class="contador">
+    <h2>{{ totalConcluidos }}</h2>
+    <p>Descartes concluídos</p>
+  </div>
+
+  <div class="formulario">
+    <h2>Registrar novo descarte</h2>
+
+    <form (ngSubmit)="adicionar()">
+
+      <label>Qual material você deseja descartar?</label>
+
+      <select name="material" [(ngModel)]="material" required>
+        <option value="">Selecione um material</option>
+        <option value="Papel">Papel</option>
+        <option value="Plástico">Plástico</option>
+        <option value="Vidro">Vidro</option>
+        <option value="Metal">Metal</option>
+        <option value="Eletrônicos">Eletrônicos</option>
+      </select>
+
+      <label>Local onde pretende descartar:</label>
+
+      <input
+        type="text"
+        name="local"
+        placeholder="Ex: Ponto de coleta do bairro"
+        [(ngModel)]="local"
+        required
+      >
+
+      <button type="submit">Adicionar descarte</button>
+
+    </form>
+  </div>
+
+  <div class="lista">
+    <h2>Meus descartes</h2>
+
+    @for (item of descartes; track item.id) {
+      <app-item-descarte
+        [item]="item"
+        (concluir)="concluir($event)"
+        (remover)="remover($event)">
+      </app-item-descarte>
+    } @empty {
+      <p>Você ainda não possui descartes cadastrados.</p>
+    }
+
+  </div>
+
+</div>
